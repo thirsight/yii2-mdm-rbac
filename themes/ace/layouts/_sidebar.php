@@ -24,11 +24,7 @@ use yii\widgets\Menu;
 
     <?php
     $items = \mdm\admin\components\MenuHelper::getAssignedMenu(Yii::$app->user->id, null, function($menu) {
-        $icons = [
-            'rbac' => '<i class="menu-icon fa fa-user-secret"></i>',
-            'settings' => '<i class="menu-icon fa fa-cog"></i>',
-        ];
-        $icon = isset($icons[strtolower($menu['name'])]) ? $icons[strtolower($menu['name'])] : '';
+        $icon = preg_replace('#.*(<i[^>]+></i>).*#', '$1', $menu['data']);
 
         $item = [
             'label' => $menu['name'],

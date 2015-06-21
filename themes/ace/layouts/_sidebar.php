@@ -2,8 +2,6 @@
 use yii\helpers\Html;
 use yii\helpers\Url;
 use yii\widgets\Menu;
-
-$this->registerJs('$("#sidebar").find("li.active").parents("li.active").addClass("open")');
 ?>
 <div id="sidebar" class="sidebar responsive">
     <div class="sidebar-shortcuts" id="sidebar-shortcuts">

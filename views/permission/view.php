@@ -4,7 +4,7 @@ use yii\helpers\Html;
 use yii\widgets\DetailView;
 
 /* @var $this yii\web\View */
-/* @var $model mdm\admin\models\AuthItem */
+/* @var $model mdm\rbac\models\AuthItem */
 
 $this->title = $model->name;
 $this->params['breadcrumbs'][] = ['label' => 'Permissions', 'url' => ['index']];

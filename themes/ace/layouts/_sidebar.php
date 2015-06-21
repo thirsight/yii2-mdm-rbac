@@ -23,12 +23,12 @@ use yii\widgets\Menu;
     </div><!-- /.sidebar-shortcuts -->
 
     <?php
-    $items = \mdm\admin\components\MenuHelper::getAssignedMenu(Yii::$app->user->id, null, function($menu) {
+    $items = \mdm\rbac\components\MenuHelper::getAssignedMenu(Yii::$app->user->id, null, function($menu) {
         $icon = preg_replace('#.*(<i[^>]+></i>).*#', '$1', $menu['data']);
 
         $item = [
             'label' => $menu['name'],
-            'url' => \mdm\admin\components\MenuHelper::parseRoute($menu['route']),
+            'url' => \mdm\rbac\components\MenuHelper::parseRoute($menu['route']),
             'active' => stripos(Yii::$app->request->getUrl(), rtrim($menu['route'], '/index')) === false ? null : true,
             // 二级以下菜单链接样式
             'template' => "\n<a href=\"{url}\"><i class=\"menu-icon fa fa-caret-right\"></i> <span class=\"menu-text\">{label}</span></a> <b class=\"arrow\"></b>\n",

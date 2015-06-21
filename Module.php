@@ -1,6 +1,6 @@
 <?php
 
-namespace mdm\admin;
+namespace mdm\rbac;
 
 use Yii;
 use yii\helpers\Inflector;
@@ -15,7 +15,7 @@ use yii\helpers\Inflector;
  * 'layout' => 'left-menu', // default to null mean use application layout.
  * 'controllerMap' => [
  *     'assignment' => [
- *         'class' => 'mdm\admin\controllers\AssignmentController',
+ *         'class' => 'mdm\rbac\controllers\AssignmentController',
  *         'userClassName' => 'app\models\User',
  *         'idField' => 'id'
  *     ]
@@ -59,7 +59,7 @@ class Module extends \yii\base\Module
      * @var string Main layout using for module. Default to layout of parent module.
      * Its used when `layout` set to 'left-menu', 'right-menu' or 'top-menu'.
      */
-    public $mainLayout ='@mdm/admin/views/layouts/main.php';
+    public $mainLayout ='@mdm/rbac/views/layouts/main.php';
 
     /**
      * @inheritdoc
@@ -68,12 +68,12 @@ class Module extends \yii\base\Module
     {
         parent::init();
 
-        $this->setBasePath('@mdm/admin');
+        $this->setBasePath('@mdm/rbac');
 
         Yii::$app->i18n->translations['rbac-admin'] = [
             'class' => 'yii\i18n\PhpMessageSource',
             'sourceLanguage' => 'en',
-            'basePath' => '@mdm/admin/messages'
+            'basePath' => '@mdm/rbac/messages'
             
         ];
 

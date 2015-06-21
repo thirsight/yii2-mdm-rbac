@@ -1,5 +1,5 @@
 <?php
-namespace mdm\admin\models;
+namespace mdm\rbac\models;
 /**
  * Route
  *

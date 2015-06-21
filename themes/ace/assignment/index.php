@@ -7,7 +7,7 @@ use yii\widgets\Pjax;
 /**
  * @var yii\web\View $this
  * @var yii\data\ActiveDataProvider $dataProvider
- * @var mdm\admin\models\searchs\Assignment $searchModel
+ * @var mdm\rbac\models\searchs\Assignment $searchModel
  */
 
 $this->title = Yii::t('rbac-admin', 'Assignments');

@@ -1,6 +1,6 @@
 <?php
 
-namespace mdm\admin;
+namespace mdm\rbac;
 
 /**
  * AdminAsset
@@ -13,7 +13,7 @@ class AdminAsset extends \yii\web\AssetBundle
     /**
      * @inheritdoc
      */
-    public $sourcePath = '@mdm/admin/assets';
+    public $sourcePath = '@mdm/rbac/assets';
 
     /**
      * @inheritdoc

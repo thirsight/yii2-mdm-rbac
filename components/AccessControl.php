@@ -1,6 +1,6 @@
 <?php
 
-namespace mdm\admin\components;
+namespace mdm\rbac\components;
 
 use Yii;
 use yii\di\Instance;
@@ -18,7 +18,7 @@ use yii\web\User;
  *
  * ~~~
  * 'as access' => [
- *     'class' => 'mdm\admin\components\AccessControl',
+ *     'class' => 'mdm\rbac\components\AccessControl',
  *     'allowActions' => ['site/login', 'site/error']
  * ]
  * ~~~

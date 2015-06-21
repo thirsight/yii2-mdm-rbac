@@ -1,10 +1,10 @@
 <?php
 
-namespace mdm\admin\controllers;
+namespace mdm\rbac\controllers;
 
 use Yii;
-use mdm\admin\models\Menu;
-use mdm\admin\models\searchs\Menu as MenuSearch;
+use mdm\rbac\models\Menu;
+use mdm\rbac\models\searchs\Menu as MenuSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;

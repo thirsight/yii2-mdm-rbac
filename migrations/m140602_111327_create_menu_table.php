@@ -1,7 +1,7 @@
 <?php
 
 use yii\db\Schema;
-use mdm\admin\components\Configs;
+use mdm\rbac\components\Configs;
 
 /**
  * Migration table of table_menu

@@ -1,6 +1,6 @@
 <?php
 
-namespace mdm\admin\components;
+namespace mdm\rbac\components;
 
 use Yii;
 use yii\db\Connection;
